@@ -1,0 +1,9 @@
+.selfie {
+  border-radius: 50%;
+    border: white;
+    height: 400px;
+    width: 400px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 100px;
+}

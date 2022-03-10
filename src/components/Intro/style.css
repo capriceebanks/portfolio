@@ -1,0 +1,20 @@
+#intro {
+  margin-top: 200px;
+  padding: 200px 0px 0 70px;
+  
+  color:white;
+}
+#stack {
+  margin-top: 10px;
+}
+
+#selfie {
+  border-radius: 50%;
+  border: white;
+  height: 400px;
+  width: 400px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
