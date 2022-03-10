@@ -1,0 +1,26 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+nav {
+    border: yellow solid
+}
+
+#navlinks {
+    padding-top: 15px;
+    display: inline-block;
+}
+
+
+#key {
+    height: 85x;
+    width: 85px;
+    display: inline;
+}
+
+#intro {
+    padding: 170px 0px 0 70px;
+    border: solid black;
+}
+
+
+
+
