@@ -1,21 +1,31 @@
 #intro {
-  margin: 150px 0 0 70px;
+  margin: 125px 0 0 125px;
   /* padding-left: 70px; */
   display: flex;
   justify-content: space-between;
-  color:white;
+  color: white;
 }
+
+.text {
+  margin-top: 90px;
+}
+
+span {
+  color: lightpink;
+  font-size: 55px;
+}
+
 #stack {
   margin-top: 10px;
 }
 
 #selfie {
   border-radius: 50%;
-  border: white;
+  border: lightpink dashed 4px;
   height: 400px;
   width: 400px;
   float: right;
-  margin-top: 10px;
-  margin-right: 100px;
+  /* margin-top: 10px; */
+  margin-right: 150px;
 }
 

@@ -9,20 +9,10 @@ return(
   <Container>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
-      <Navbar.Text>
-        <Nav>
-          <Nav.Link href='/'>Home</Nav.Link>
-          <Nav.Link href='/projects'>Projects</Nav.Link>
-        </Nav>
-        {/* <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-          <li className='nav-item'>
-            <a className='nav-link links' href="#">Home</a>
-          </li>
-          <li className='nav-item'>
-            <a className='nav-link navbar-item links' href="#">Projects</a>
-          </li>
-        </ul> */}
-      </Navbar.Text>
+      <Nav>
+        <Nav.Link href='/'>Home</Nav.Link>
+        <Nav.Link href='/projects'>Projects</Nav.Link>
+      </Nav>
     </Navbar.Collapse>
   </Container>
 </Navbar>
