@@ -12,7 +12,7 @@ import { NavBar,  } from './components'
 const App = () => {
 return(
 <>
-{/* <NavBar /> */}
+<NavBar />
 <Switch>
   <Route exact path='/'><Home /></Route> 
 {/* <Route path='/projects'><Projects /></Route>  */}

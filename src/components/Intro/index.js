@@ -6,8 +6,12 @@ const Intro = () => {
 return(
 <>
 <div id='intro' >
-  <h1>This site is under construction. Please return in April 2022!</h1>
-  
+  <div className='text'>
+    <h1>Hi, I'm <br /><span>Caprice Ebanks!</span></h1>
+    <p>I'm a trainee full-stack web developer based in London. </p>
+    <p id='stack'>HTML/CSS JS NODE EXPRESS REACT MONGODB/PSQL</p>
+  </div>
+  <img id='selfie' src={Pic} />
 </div>
 </>
 )};
