@@ -1,22 +1,58 @@
 import React from 'react';
+import {
+	toggleColorMode,
+	useColorMode,
+	useColorModeValue,
+	Link,
+	Flex,
+	IconButton,
+	Spacer,
+} from '@chakra-ui/react';
+import { MoonIcon } from '@chakra-ui/icons';
+import { NavLink } from 'react-router-dom';
+
 import './style.css';
-import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const NavBar = () => {
-return(
-<>
-<Navbar bg='dark' variant="dark" className='shadow fixed-top'>
+	const { toggleColorMode } = useColorMode();
+	const bg = useColorModeValue('#FFF', '');
+	return (
+		<>
+			<Flex bg="dark" w="100%" h="60px" boxShadow="lg">
+				<Link>
+					<NavLink className="link" exact to="/" activeClassName="active">
+						Home
+					</NavLink>
+				</Link>
+				<Link>
+					<NavLink className="link" to="/projects" activeClassName="active">
+						Projects
+					</NavLink>
+				</Link>
+				<Spacer />
+				<IconButton
+					icon={<MoonIcon />}
+					variant="ghost"
+					onClick={toggleColorMode}
+					mt={2}
+					mx={4}
+				/>
+			</Flex>
+
+			{/* <Navbar inverse bg='dark' variant="dark" className='shadow fixed-top'>
   <Container>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
       <Nav>
-        <Nav.Link href='/'>Home</Nav.Link>
-        <Nav.Link href='/projects'>Projects</Nav.Link>
+        <Nav.Link>
+        </Nav.Link> 
+        <Nav.Link>
+        </Nav.Link> 
       </Nav>
     </Navbar.Collapse>
   </Container>
-</Navbar>
-{/* <nav className='navbar fixed-top shadow bg-dark' role="navigation">
+</Navbar> */}
+			{/* <nav className='navbar fixed-top shadow bg-dark' role="navigation">
   <div className='container-fluid'>
     <div className='nav-brand'>
       {/* <h1 className="title is-inline is-info">Portfolio</h1> }
@@ -33,10 +69,10 @@ return(
     </div>
   </div>
 </nav> */}
-</>
-)};
+		</>
+	);
+};
 export default NavBar;
-
 
 // { "foreground": "#f6c177" } - gold
 // "foreground": "#ebbcba" - pink (main quotes)

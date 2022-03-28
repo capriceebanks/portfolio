@@ -3,10 +3,22 @@ h2 {
 }
 
 .link {
-  color: #ff9797;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: lightpink;
+}
+
+.active{
+  color: lightpink;
 }
 
 .links {
   color: lightpink
 }
 
+/* Nav.Link:hover {
+  background-color: red;
+} */
