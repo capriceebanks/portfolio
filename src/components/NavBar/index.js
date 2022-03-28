@@ -15,10 +15,10 @@ import './style.css';
 
 const NavBar = () => {
 	const { toggleColorMode } = useColorMode();
-	const bg = useColorModeValue('#FFF', '');
+	const bg = useColorModeValue('#292b2c', '');
 	return (
 		<>
-			<Flex bg="dark" w="100%" h="60px" boxShadow="lg">
+			<Flex bg={bg} w="100%" h="60px" boxShadow="lg">
 				<Link>
 					<NavLink className="link" exact to="/" activeClassName="active">
 						Home
